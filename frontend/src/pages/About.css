@@ -1,0 +1,225 @@
+/* About.css */
+
+.about-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1f2933;
+}
+
+/* Hero Section */
+.about-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.about-hero-text {
+  flex: 1 1 300px;
+}
+
+.about-hero-text h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.about-hero-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.about-hero-card {
+  flex: 1 1 280px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.about-hero-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.about-hero-card p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-bottom: 18px;
+}
+
+.about-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.stat-item {
+  flex: 1 1 80px;
+  background: #f3f4ff;
+  border-radius: 12px;
+  padding: 10px 12px;
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+
+/* Sections */
+.about-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.about-section-subtitle {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* Features */
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.feature-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px 14px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+  border: 1px solid #e5e7eb;
+}
+
+.feature-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+/* Steps / How It Works */
+.about-steps .steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 18px;
+  margin-top: 16px;
+}
+
+.step {
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 18px 16px;
+  border: 1px dashed #d1d5db;
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: #2563eb;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.step h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.step p {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+/* Mission */
+.about-mission p {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+/* CTA */
+.about-cta {
+  text-align: center;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 18px;
+  margin-top: 40px;
+}
+
+.about-cta h2 {
+  font-size: 1.8rem;
+  margin-bottom: 6px;
+}
+
+.about-cta p {
+  font-size: 0.95rem;
+  margin-bottom: 16px;
+}
+
+.about-cta-btn {
+  border: none;
+  outline: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #ffffff;
+  color: #1d4ed8;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease,
+    color 0.15s ease;
+}
+
+.about-cta-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+  background: #eff6ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 24px 16px 40px;
+  }
+
+  .about-hero {
+    flex-direction: column;
+  }
+
+  .about-cta h2 {
+    font-size: 1.5rem;
+  }
+}
